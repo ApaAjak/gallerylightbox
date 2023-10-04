@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sosmed</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="website icon" href="/Icon.png">
+   <style>
+        /*
+    Auther: Abdelrhman Said
+*/
+/* font */
+@font-face {
+    font-family: 'Mooli-Regular';
+    src: url(/fonts/Mooli-Regular.ttf) format('woff');
+}
+
+
+nav {
+  width: 100%;
+    height: 50px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .8);
+    color: #d7e1ec;
+    position: fixed;
+    margin-bottom: 608px;
+}
+
+nav a {
+    color: #d7e1ec;
+    text-decoration: none;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*:focus,
+*:active {
+  outline: none !important;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+html,
+body {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  font-family: "Poppins", sans-serif;
+  place-items: center;
+  background: linear-gradient(315deg, black, #d7e1ec);
+  background-size: cover;
+}
+
+.wrapper {  
+  display: flex;
+  list-style: none;
+}
+
+a {
+    color: black;
+}
+
+.wrapper .icon instagram {
+    color: black;
+}
+
+.wrapper .icon {
+  position: relative;
+  background: #ffffff;
+  border-radius: 50%;
+  padding: 20px;
+  margin: 20px;
+  width: 50px;
+  height: 50px;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip {
+  position: absolute;
+  top: 0;
+  font-size: 14px;
+  background: #ffffff;
+  color: #ffffff;
+  padding: 5px 8px;
+  border-radius: 5px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .tooltip::before {
+  position: absolute;
+  content: "";
+  height: 8px;
+  width: 8px;
+  background: #ffffff;
+  bottom: -3px;
+  left: 50%;
+  transform: translate(-50%) rotate(45deg);
+  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+  top: -45px;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.wrapper .icon:hover span,
+.wrapper .icon:hover .tooltip {
+  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .instagram:hover,
+.wrapper .instagram:hover .tooltip,
+.wrapper .instagram:hover .tooltip::before {
+  background: #E4405F;
+  color: #ffffff;
+}
+
+.wrapper .github:hover,
+.wrapper .github:hover .tooltip,
+.wrapper .github:hover .tooltip::before {
+  background: #333333;
+  color: #ffffff;
+}
+
+.wrapper .youtube:hover,
+.wrapper .youtube:hover .tooltip,
+.wrapper .youtube:hover .tooltip::before {
+  background: #CD201F;
+  color: #ffffff;
+}
+
+h1 {
+  font-family: 'Mooli-Regular';
+  position: absolute;
+  margin-top: 300px;
+  padding: 70px;
+}
+
+p {
+  font-family: 'Mooli-Regular';
+  position: absolute;
+  margin-top: 480px;
+  padding: 70px;
+  font-size: 20px;
+}
+    </style>
+</head>
+<body>
+  <nav class="navbar">
+      <ul>
+        <a href="https://idn.sch.id/sma/"><li><img src="/src/Original Logo 1.png" alt=""></li></a>
+      </ul>
+    </nav>
+    <ul class="wrapper">
+        <a target="_blank" href="https://www.instagram.com/preciious.me/">
+            <li class="icon instagram">
+                <span class="tooltip">Bwaa!!</span>
+                <span><i class="fa fa-instagram" style="font-size:24px"></i></span> 
+              </li>
+        </a>
+        
+        <a target="_blank" href="https://github.com/ApaAjak">
+            <li class="icon github">
+                <span class="tooltip">Woi!!</span>
+                <span><i class="fa fa-github" style="font-size:24px"></i></span>
+              </li>
+        </a>
+        
+        <a target="_blank" href="https://www.youtube.com/channel/UC_0fPeAgGrqHMn1LtFMF_pA">
+            <li class="icon youtube">
+                <span class="tooltip">Hayoo!!</span>
+                <span><i class="fa fa-youtube-play" style="font-size:24px"></i></span>
+              </li>
+        </a>
+        
+      </ul>
+
+      <h1>I'm Yazid I'm a student at SMA Ti HSI IDN I'm in my second year here and currently studying CSS 3.</h1>
+      <p><br>actually I should have learned CSS3 and so on in the 2nd semester of first grade but because at that time my teacher was a bit different but that's all that's important now I'm learning HTML CSS and so on</p>
+</body>
+</html>
